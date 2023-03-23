@@ -5,11 +5,11 @@ Muffin baking
 A skill to help with baking muffins includig recipes and preparation
 
 ## Examples
-* "(please) (tell |give) me a recipe for muffins"
-* "Can you (tell |give) me a recipe for muffins (|please)"
-* "Do you (know |have) a recipe for muffins"
-* "What is a (|good) recipe for muffins"
-* "Can you (suggest |recommend) a recipe for muffins (|please)"
+* "Tell me a recipe for muffins"
+* "Can you give me a recipe for muffins please"
+* "Do you know a recipe for muffins"
+* "What is a good recipe for muffins"
+* "Can you recommend a recipe for muffins please"
 
 ## Credits
 ADrohan
