@@ -1,5 +1,7 @@
-(|please) (|tell |give) me a recipe for muffins
-Can you (|tell |give) me a recipe for muffins (|please)
-Do you (|know |have) a recipe for muffins
-What is a (|good) recipe for muffins
-Can you (|suggest |recommend) a recipe for muffins (|please)
+( | please) (tell | give) me a recipe for ( | {flavour} muffins
+Can you (tell | give) me a recipe for ( | {flavour} muffins ( | please)
+Do you (know | have) a recipe for ( | {flavour})  muffins
+What is a ( | good) recipe for ( | {flavour}) muffins
+Can you (suggest | recommend) a recipe for ( | {flavour}) muffins ( | please)
+I'd like to make ({ | flavour}) muffins?
+I'd like to make ( |{flavour}) muffins
