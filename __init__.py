@@ -4,16 +4,15 @@ from random import randint
 class Muffins(MycroftSkill):
     def __init__(self):
         MycroftSkill.__init__(self)
-        self.log.info("skill has started")
 
+# To do
 #    def initialize(self):
- #       self.register_entity_file('flavour.entity')
+#       self.register_entity_file('flavour.entity')
 
     @intent_file_handler('muffins.intent')
     def handle_muffins(self, message):
-        self.speak_dialog("welcome")
+        self.speak_dialog('welcome')
         flavour = message.data.get('flavour')
-#        self.speak_dialog('flavour.recipe', data={'flavour' : flavour})
         if flavour is None:
             self.speak_dialog('plain.recipe')
         elif flavour.casefold() == "plain":
@@ -22,13 +21,12 @@ class Muffins(MycroftSkill):
 
     def quantity_check (self):
         quantity = randint(1,9)
-#        self.log.info(quantity)
         return quantity
 
     @intent_file_handler('check.ingredients.intent')
     def handle_check_ingredients(self, message):
         stock = self.quantity_check()
-        self.log.info(stock)
+#        self.log.info(stock)
 
         if stock <= 5:
             self.speak_dialog('unstocked', wait=True)
@@ -48,7 +46,6 @@ class Muffins(MycroftSkill):
         self.anything_else()
 
     def anything_else(self):
-        self.log.info("reached anything else")
         anything_else_response = self.ask_yesno('anything.request')
 
         if anything_else_response == "yes":
